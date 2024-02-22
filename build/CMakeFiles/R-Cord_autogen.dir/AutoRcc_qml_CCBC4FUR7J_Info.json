@@ -1,0 +1,20 @@
+{
+	"BUILD_DIR" : "/home/alarm/Documents/Git/Asura/AsuraV2/build/R-Cord_autogen",
+	"CMAKE_BINARY_DIR" : "/home/alarm/Documents/Git/Asura/AsuraV2/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/alarm/Documents/Git/Asura/AsuraV2/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/alarm/Documents/Git/Asura/AsuraV2",
+	"CMAKE_SOURCE_DIR" : "/home/alarm/Documents/Git/Asura/AsuraV2",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/alarm/Documents/Git/Asura/AsuraV2/build/R-Cord_autogen/include",
+	"INPUTS" : [ "/home/alarm/Documents/Git/Asura/AsuraV2/qml/main.qml" ],
+	"LOCK_FILE" : "/home/alarm/Documents/Git/Asura/AsuraV2/build/CMakeFiles/R-Cord_autogen.dir/AutoRcc_qml_CCBC4FUR7J_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "CCBC4FUR7J",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/usr/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/alarm/Documents/Git/Asura/AsuraV2/build/CMakeFiles/R-Cord_autogen.dir/AutoRcc_qml_CCBC4FUR7J_Used.txt",
+	"SOURCE" : "/home/alarm/Documents/Git/Asura/AsuraV2/qml/qml.qrc",
+	"VERBOSITY" : 0
+}
