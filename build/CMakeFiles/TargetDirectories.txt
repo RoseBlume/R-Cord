@@ -1,5 +1,0 @@
-/home/alarm/Documents/Git/Asura/AsuraV2/build/CMakeFiles/R-Cord.dir
-/home/alarm/Documents/Git/Asura/AsuraV2/build/CMakeFiles/edit_cache.dir
-/home/alarm/Documents/Git/Asura/AsuraV2/build/CMakeFiles/rebuild_cache.dir
-/home/alarm/Documents/Git/Asura/AsuraV2/build/CMakeFiles/R-Cord_autogen_timestamp_deps.dir
-/home/alarm/Documents/Git/Asura/AsuraV2/build/CMakeFiles/R-Cord_autogen.dir
