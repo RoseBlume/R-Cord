@@ -7,27 +7,14 @@ Window {
     title: qsTr("R-Cord")
     WebEngineView {
         anchors.fill: parent
-        url: "https://discord.com"
+        url: "https://discord.com/channels/@me
     }
-//    WebEngineView:
-//    {
-//        width:parent.width
-//        height:parent.height
-//        url: "https://google.com"
-//    }
 
 
     Component.onCompleted:
     {
-        console.log("Hello World From Main.qml")
-
-        // On mobile device application auto scale
-        if(Qt.platform.os != "ios" && Qt.platform.os != "android")
-        {
-            width = Screen.width
-            height = Screen.height - Screen.height * 0.1
-        }
-        // Turn on visibility after setting the size explictly.
+        width = Screen.width
+        height = Screen.height
         visible = true
     }
 }
