@@ -1,4 +1,4 @@
-import QtWebEngine 1.8
+import QtWebView 1.8
 import QtQuick 2.0
 import QtQuick.Window 2.0
 
@@ -7,7 +7,7 @@ Window {
     title: qsTr("R-Cord")
     width: Screen.width
     height: Screen.height
-    WebEngineView {
+    WebView {
         anchors.fill: parent
         url: "https://discord.com/channels/@me
     }
