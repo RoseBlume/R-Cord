@@ -4,18 +4,15 @@ cmake_minimum_required(VERSION 3.14)
 project(R-Cord LANGUAGES CXX VERSION 1.0.0)
 
 # Find all required package, if some is missing it will result in error in target_link_libraries
-find_package(Qt5 REQUIRED COMPONENTS
+find_package(Qt6 REQUIRED COMPONENTS
   Core
   Gui
   Qml
   Quick
   QuickControls2
-  Svg
-  Xml
-  QuickCompiler
-  WebEngine
+  WebEngineQuick
   )
-find_package(Qt5 QUIET COMPONENTS QmlWorkerScript)
+find_package(Qt6 QUIET COMPONENTS QmlWorkerScript)
 
 add_executable(R-Cord src/main.cpp qml/qml.qrc)
 
@@ -29,18 +26,16 @@ set_target_properties(R-Cord PROPERTIES AUTOMOC TRUE)
 
 # target_link_libraries and not qt5_use_module because it is deprecated
 target_link_libraries(R-Cord PRIVATE
-  Qt5::Core
-  Qt5::Gui
-  Qt5::Svg
-  Qt5::Xml
-  Qt5::Qml
-  Qt5::Quick
-  Qt5::QuickControls2
-  Qt5::WebEngine
+  Qt6::Core
+  Qt6::Gui
+  Qt6::Qml
+  Qt6::Quick
+  Qt6::QuickControls2
+  Qt6::WebEngineQuick
 )
 
 # Only use static macro if linking with static qt
-get_target_property(QT_TARGET_TYPE Qt5::Core TYPE)
+get_target_property(QT_TARGET_TYPE Qt6::Core TYPE)
 if(${QT_TARGET_TYPE} STREQUAL "STATIC_LIBRARY")
   include(cmake/FetchQtStaticCMake.cmake)
 
@@ -64,8 +59,8 @@ endif()
 
 # This target needs to be linked after qt_generate_qml_plugin_import call.
 # This is hiding a bug somewhere ...
-if(TARGET Qt5::QmlWorkerScript)
-  target_link_libraries(R-Cord PRIVATE Qt5::QmlWorkerScript)
+if(TARGET Qt6::QmlWorkerScript)
+  target_link_libraries(R-Cord PRIVATE Qt6::QmlWorkerScript)
 endif()
 
 if(${CMAKE_SYSTEM_NAME} STREQUAL "iOS")
