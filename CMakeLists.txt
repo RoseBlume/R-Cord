@@ -10,7 +10,7 @@ find_package(Qt6 REQUIRED COMPONENTS
   Qml
   Quick
   QuickControls2
-  WebEngineQuick
+  WebView
   )
 find_package(Qt6 QUIET COMPONENTS QmlWorkerScript)
 
@@ -31,7 +31,7 @@ target_link_libraries(R-Cord PRIVATE
   Qt6::Qml
   Qt6::Quick
   Qt6::QuickControls2
-  Qt6::WebEngineQuick
+  Qt6::WebEngineView
 )
 
 # Only use static macro if linking with static qt
