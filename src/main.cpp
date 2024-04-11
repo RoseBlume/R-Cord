@@ -4,7 +4,6 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QtWebView::initialize();
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
