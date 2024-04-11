@@ -31,7 +31,7 @@ target_link_libraries(R-Cord PRIVATE
   Qt6::Qml
   Qt6::Quick
   Qt6::QuickControls2
-  Qt6::WebEngine
+  Qt6::WebView
 )
 
 # Only use static macro if linking with static qt
