@@ -5,6 +5,8 @@ import QtQuick.Window 2.0
 Window {
     id: window
     title: qsTr("R-Cord")
+    width: Screen.width
+    height: Screen.height
     WebEngineView {
         anchors.fill: parent
         url: "https://discord.com/channels/@me
@@ -13,8 +15,6 @@ Window {
 
     Component.onCompleted:
     {
-        width = Screen.width
-        height = Screen.height
         visible = true
     }
 }
