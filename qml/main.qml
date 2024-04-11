@@ -9,7 +9,7 @@ Window {
     height: Screen.height
     WebView {
         anchors.fill: parent
-        url: "https://discord.com/channels/@me
+        url: "https://discord.com/channels/@me"
     }
 
 
